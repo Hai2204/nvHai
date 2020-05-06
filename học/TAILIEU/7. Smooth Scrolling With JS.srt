@@ -1,0 +1,680 @@
+﻿1
+00:00:00,210 --> 00:00:00,750
+All right guys.
+
+2
+00:00:00,750 --> 00:00:06,900
+Now we're going to implement our smooth rolling and we're going to have to use javascript with J query
+
+3
+00:00:07,220 --> 00:00:13,470
+and I'll explain a little bit about that in a minute but I just want to show you guys something I opened
+
+4
+00:00:13,470 --> 00:00:22,560
+the site in Safari and with Safari the the position Sticky isn't doesn't work just yet.
+
+5
+00:00:22,620 --> 00:00:26,850
+So the menu isn't isn't sticking to the top which is fine.
+
+6
+00:00:26,850 --> 00:00:29,720
+It's not like it breaks or anything it just simply doesn't stick.
+
+7
+00:00:29,750 --> 00:00:38,010
+But one thing I noticed is the spacing right here and to fix that we actually want to go to want to
+
+8
+00:00:38,010 --> 00:00:45,480
+go to our style CSX and go to our showcase content and where I have top we actually want to change this
+
+9
+00:00:45,480 --> 00:00:49,070
+to 65 which I put in the beginning but it wasn't.
+
+10
+00:00:49,070 --> 00:00:53,490
+It was showing extra space down here because I forgot the bottom zero.
+
+11
+00:00:53,910 --> 00:00:57,720
+So let's go ahead and save that and notice it still looks fine here.
+
+12
+00:00:57,720 --> 00:01:02,750
+Everything is good and if I bring safari back in now we don't have that spacing.
+
+13
+00:01:02,850 --> 00:01:04,000
+OK.
+
+14
+00:01:04,260 --> 00:01:07,790
+And this you know it still works but it just doesn't stick to the top.
+
+15
+00:01:07,830 --> 00:01:14,750
+So it's I mean it doesn't hurt to use position stick even though it's not supported in some browsers.
+
+16
+00:01:15,140 --> 00:01:21,300
+It just makes a better experience if you're in Chrome or Firefox or browsers that do support it.
+
+17
+00:01:21,780 --> 00:01:22,140
+OK.
+
+18
+00:01:22,560 --> 00:01:27,270
+So now let's start let's get into the smooth scrolling now to use J.
+
+19
+00:01:27,260 --> 00:01:27,960
+Query.
+
+20
+00:01:28,020 --> 00:01:31,370
+Let's go to J.
+
+21
+00:01:31,370 --> 00:01:34,380
+Query dot com.
+
+22
+00:01:34,410 --> 00:01:35,020
+Now J.
+
+23
+00:01:35,040 --> 00:01:41,400
+Query was used all the time years a couple of years ago and it's starting to phase out for things like
+
+24
+00:01:41,850 --> 00:01:47,910
+dumb Dom selection basically selecting things from the document object model which is basically the
+
+25
+00:01:47,910 --> 00:01:53,560
+hierarchy of each time all tags and attributes and content in the browser.
+
+26
+00:01:53,580 --> 00:01:59,340
+Now you can do all this stuff with vanilla javascript which is just regular javascript so there's a
+
+27
+00:01:59,340 --> 00:02:02,310
+lot of things you don't need a query for that you used to.
+
+28
+00:02:02,310 --> 00:02:09,720
+However animation is one that is kind of difficult to do and in some situations.
+
+29
+00:02:09,720 --> 00:02:15,470
+So things like Sly sliders and scrolling effects and stuff J.
+
+30
+00:02:15,540 --> 00:02:17,460
+Query makes this stuff really easy.
+
+31
+00:02:18,300 --> 00:02:20,010
+So we're gonna be using it for this.
+
+32
+00:02:20,010 --> 00:02:23,630
+This one feature now you could download the javascript.
+
+33
+00:02:23,640 --> 00:02:26,510
+It's just basically a javascript file you could download it.
+
+34
+00:02:26,520 --> 00:02:31,200
+We're going to use what's called a C D N which we've actually been using with font.
+
+35
+00:02:31,230 --> 00:02:32,220
+Awesome.
+
+36
+00:02:32,220 --> 00:02:38,850
+If you look in our index each team I'll file our font awesome CSX is coming from somewhere else right.
+
+37
+00:02:38,850 --> 00:02:42,510
+It's not it's not located in our local file here.
+
+38
+00:02:42,570 --> 00:02:46,230
+It's coming from this huge dot font awesome dot com.
+
+39
+00:02:46,290 --> 00:02:49,860
+So we're going to do the same type of thing with J query.
+
+40
+00:02:50,130 --> 00:02:55,590
+So I just need to find where we can get the C.D. in here right here using J.
+
+41
+00:02:55,590 --> 00:03:00,140
+Query with a C.D. And then it stands for content delivery network.
+
+42
+00:03:00,270 --> 00:03:03,180
+So let's go
+
+43
+00:03:06,150 --> 00:03:07,260
+Jake right here.
+
+44
+00:03:07,260 --> 00:03:10,840
+So Jake Query CDM provided by stack path.
+
+45
+00:03:10,870 --> 00:03:13,950
+No that's not it.
+
+46
+00:03:14,030 --> 00:03:17,060
+You know I can't find it is because.
+
+47
+00:03:17,110 --> 00:03:17,390
+OK.
+
+48
+00:03:17,400 --> 00:03:18,760
+So that's the fire.
+
+49
+00:03:18,780 --> 00:03:24,710
+I usually just type in J query C.D. And yeah.
+
+50
+00:03:24,800 --> 00:03:26,250
+So right here code dot J.
+
+51
+00:03:26,250 --> 00:03:31,130
+Cary dot com and then there's different versions we're gonna choose the latest which is J.
+
+52
+00:03:31,170 --> 00:03:37,560
+Query three and one thing you don't want to do is choose the slim version the reason for that is with
+
+53
+00:03:37,560 --> 00:03:43,590
+the smooth scrolling we're actually using the intimate function or the intimate method and that's not
+
+54
+00:03:43,590 --> 00:03:49,440
+included in the slim version so you can choose the uncompressed which is just the regular JavaScript
+
+55
+00:03:49,440 --> 00:03:55,650
+file are minute offside which means that all the whitespace is removed all the comments things like
+
+56
+00:03:55,650 --> 00:04:00,680
+that and it makes your file a little makes it a little faster because it's smaller.
+
+57
+00:04:00,870 --> 00:04:06,710
+So we'll go ahead and choose the minute fied and then it's gonna give us a script tag that has the J
+
+58
+00:04:06,720 --> 00:04:07,640
+Cary CDM.
+
+59
+00:04:07,700 --> 00:04:13,800
+So we can copy this we're actually can just click this that you copy it to your clipboard and then we'll
+
+60
+00:04:13,800 --> 00:04:22,470
+go back into our index file go down to the bottom and we're gonna pace this in above our main J Yes.
+
+61
+00:04:22,490 --> 00:04:34,800
+In fact I'm going to put a comment here and say this is our local J.S. file and this is Google Maps
+
+62
+00:04:35,490 --> 00:04:44,150
+and then above the local we're gonna put our J query C.D. in.
+
+63
+00:04:44,460 --> 00:04:48,800
+So we're just including the J query JavaScript file from somewhere else.
+
+64
+00:04:48,810 --> 00:04:52,650
+Now it's important to put it above the main J S because we're using J.
+
+65
+00:04:52,650 --> 00:04:56,650
+Query inside of this javascript file if we put this below it.
+
+66
+00:04:56,730 --> 00:04:58,840
+It's not going to know what we're talking about.
+
+67
+00:04:58,860 --> 00:04:59,210
+OK.
+
+68
+00:04:59,220 --> 00:05:02,280
+So it's it's important to use this order.
+
+69
+00:05:02,460 --> 00:05:10,080
+Now we did use Google Maps inside the main J Yes but notice that in the script tag that Google gave
+
+70
+00:05:10,080 --> 00:05:12,080
+us they use async defer.
+
+71
+00:05:12,420 --> 00:05:17,930
+So that makes it so that we can actually put it down here and we can still use it in this manger.
+
+72
+00:05:17,930 --> 00:05:18,800
+Yes.
+
+73
+00:05:18,930 --> 00:05:26,620
+So let's save this and let's go into our main J.S. and I'm going to just pace this in
+
+74
+00:05:29,830 --> 00:05:32,950
+and this is our little code snippet for smooth scrolling.
+
+75
+00:05:32,950 --> 00:05:39,750
+So basically we're targeting the nav bar any link that's inside the nav bar.
+
+76
+00:05:40,030 --> 00:05:41,910
+Because if we look at our code here.
+
+77
+00:05:41,930 --> 00:05:44,940
+All right I'm sorry our markup our HD.
+
+78
+00:05:45,190 --> 00:05:51,390
+We have our whereas it's I.D. nav bar and we're targeting the link k.
+
+79
+00:05:51,410 --> 00:05:53,710
+So if any link is clicked.
+
+80
+00:05:53,710 --> 00:05:58,300
+So we're saying on click which is an event then we run a function.
+
+81
+00:05:58,450 --> 00:05:58,900
+OK.
+
+82
+00:05:58,900 --> 00:06:06,340
+Now this function we're checking for the hash because when we click this we're basically looking at
+
+83
+00:06:06,340 --> 00:06:10,180
+these the hash and then whatever the ideas.
+
+84
+00:06:10,180 --> 00:06:17,830
+And then we're gonna call the animate on the body on the H team Allen body and we want to scroll from
+
+85
+00:06:17,830 --> 00:06:20,290
+the top to that hash.
+
+86
+00:06:20,290 --> 00:06:21,360
+OK.
+
+87
+00:06:21,400 --> 00:06:27,100
+I mean you don't need to understand all this but that's what it's doing it's going to basically do a
+
+88
+00:06:27,100 --> 00:06:31,150
+smooth scroll and this is the speed at which it's going to do it.
+
+89
+00:06:31,170 --> 00:06:39,490
+So you can you can make this faster or slower it's in milliseconds so a hundred milliseconds and then
+
+90
+00:06:39,490 --> 00:06:41,800
+we also want to do it with the class of button.
+
+91
+00:06:41,800 --> 00:06:47,340
+And the reason I put that there is because if we look at the Showcase we have the read more.
+
+92
+00:06:47,350 --> 00:06:48,990
+And it goes to the what.
+
+93
+00:06:49,120 --> 00:06:50,470
+And it has a class of button.
+
+94
+00:06:50,470 --> 00:06:53,890
+So if we click that I also want that smooth scrolling implemented.
+
+95
+00:06:54,580 --> 00:06:56,740
+So I'm going to go ahead and save this.
+
+96
+00:06:56,740 --> 00:07:00,520
+Our main JSA is already being included so it should work.
+
+97
+00:07:00,550 --> 00:07:02,920
+So we'll go back here and say what.
+
+98
+00:07:02,920 --> 00:07:05,660
+And it's scroll this down.
+
+99
+00:07:05,790 --> 00:07:12,690
+And the reason that it's not covering the the title anymore is because I put this in here I basically
+
+100
+00:07:12,690 --> 00:07:20,610
+said you know we want to scroll down to the I.D. And we want to minus one.
+
+101
+00:07:20,760 --> 00:07:22,320
+If I don't have this here
+
+102
+00:07:25,570 --> 00:07:32,930
+so if we do that and we say what you can see it's still covering I go to who is still covering it.
+
+103
+00:07:32,960 --> 00:07:38,540
+So adding that negative 100 pixels that fixed it.
+
+104
+00:07:38,600 --> 00:07:40,670
+So now we can actually see the titles.
+
+105
+00:07:41,740 --> 00:07:42,080
+OK.
+
+106
+00:07:42,110 --> 00:07:47,600
+So I mean like I said don't worry if that doesn't make sense it's absolutely fine.
+
+107
+00:07:47,600 --> 00:07:55,820
+I want to add one more snippet of JavaScript so that when we start to scroll this nav bar has a little
+
+108
+00:07:55,820 --> 00:08:02,720
+bit of opacity a little bit of transparency so we can see through it right now it's completely solid
+
+109
+00:08:03,020 --> 00:08:07,840
+but I only want to do it when we're not one more so when we scroll down from the top.
+
+110
+00:08:07,850 --> 00:08:10,400
+So let me just add that in real quick.
+
+111
+00:08:10,430 --> 00:08:18,530
+So in Maine dot J.S. put that right here and basically this isn't J J query.
+
+112
+00:08:18,560 --> 00:08:20,720
+This is just regular javascript.
+
+113
+00:08:21,200 --> 00:08:23,160
+Adding an event to the window.
+
+114
+00:08:23,160 --> 00:08:23,430
+OK.
+
+115
+00:08:23,450 --> 00:08:29,330
+So in our in JavaScript you have a window object which is the whole browser and we're listening for
+
+116
+00:08:29,330 --> 00:08:36,050
+a scroll and we're saying if the scroll y position is greater than 150 basically if we're scroll down
+
+117
+00:08:36,050 --> 00:08:42,800
+more than one and 150 we're going to select the nav bar and we're going to set the opacity to zero point
+
+118
+00:08:42,800 --> 00:08:45,350
+nine which will give it a slight transparency.
+
+119
+00:08:45,350 --> 00:08:48,110
+Else if we're less than 150.
+
+120
+00:08:48,110 --> 00:08:51,810
+So basically if it's up at the top then the opacity will be 1.
+
+121
+00:08:51,950 --> 00:08:56,210
+It's not going to be and it's not going to be transparent at all.
+
+122
+00:08:56,210 --> 00:08:59,290
+So let's save that and notice it's not transparent.
+
+123
+00:08:59,300 --> 00:09:06,060
+But as soon as I go more than 150 down which is right you'll see it kick in right here.
+
+124
+00:09:06,080 --> 00:09:06,500
+See how.
+
+125
+00:09:06,500 --> 00:09:08,020
+Now you can see through it.
+
+126
+00:09:08,180 --> 00:09:09,620
+If I go up you can't.
+
+127
+00:09:09,620 --> 00:09:14,000
+That's because we're hitting that 150 position.
+
+128
+00:09:14,750 --> 00:09:17,590
+And now as we scroll down we can see through it.
+
+129
+00:09:17,670 --> 00:09:23,690
+So as you can see you can do some really cool things with JavaScript and even J query but we're not
+
+130
+00:09:23,690 --> 00:09:25,030
+going to get into that.
+
+131
+00:09:25,040 --> 00:09:31,110
+This course is about H2 on CSX but that's definitely the direction you want to go after this.
+
+132
+00:09:31,250 --> 00:09:33,890
+But let's let's check it out in Safari while we're at it.
+
+133
+00:09:33,890 --> 00:09:40,560
+So let me just grab the URL here and yes.
+
+134
+00:09:40,600 --> 00:09:44,850
+So it's just going to be you know stuck to the top which is fine.
+
+135
+00:09:45,190 --> 00:09:48,160
+And then another thing I want to do is just get rid of the space and edge ledger.
+
+136
+00:09:48,160 --> 00:09:49,450
+That should all be one word.
+
+137
+00:09:49,450 --> 00:09:56,730
+So in the logo let's see we have edge here is this.
+
+138
+00:09:56,740 --> 00:10:00,400
+Think the space is right here.
+
+139
+00:10:00,550 --> 00:10:01,420
+Save that.
+
+140
+00:10:01,420 --> 00:10:01,890
+And yeah.
+
+141
+00:10:01,900 --> 00:10:03,070
+Now it's all one word.
+
+142
+00:10:03,870 --> 00:10:04,200
+OK.
+
+143
+00:10:04,210 --> 00:10:08,180
+So I believe that the just the regular sight is complete.
+
+144
+00:10:08,200 --> 00:10:13,570
+So all we have to do now is the responsiveness which we have to deal with the menu because if we go
+
+145
+00:10:13,570 --> 00:10:17,110
+to small you can see it can kind of mess up.
+
+146
+00:10:17,260 --> 00:10:19,380
+I just want the logo on top.
+
+147
+00:10:19,380 --> 00:10:20,780
+Have this centered.
+
+148
+00:10:20,920 --> 00:10:23,080
+And this.
+
+149
+00:10:23,080 --> 00:10:24,550
+We want these to stack.
+
+150
+00:10:24,580 --> 00:10:25,920
+We want this.
+
+151
+00:10:25,990 --> 00:10:32,800
+We want to get rid of the image and just have this clients I want these images to be a little bigger.
+
+152
+00:10:32,800 --> 00:10:36,020
+We're also going to get rid of the last one so there's only four.
+
+153
+00:10:36,040 --> 00:10:40,170
+And then we're going to put the map on the bottom of the contact.
+
+154
+00:10:40,270 --> 00:10:46,930
+Also on wide screens I want the icon here to float or not float but we're going to use flex blocks.
+
+155
+00:10:46,930 --> 00:10:51,710
+I want it to be aligned to the left as opposed to just being in the middle always.
+
+156
+00:10:51,730 --> 00:10:52,490
+OK.
+
+157
+00:10:52,510 --> 00:10:55,550
+Also on tablets if it's like this size I want it to.
+
+158
+00:10:55,980 --> 00:10:58,060
+I want it to stack.
+
+159
+00:10:58,060 --> 00:11:04,570
+So that's all stuff that will have to do with the mobile dot CSX and the wide screen dots CSX.
+
+160
+00:11:04,570 --> 00:11:04,810
+OK.
+
+161
+00:11:04,840 --> 00:11:11,480
+So hopefully you guys are enjoying this and you're able to follow along and things are making sense.
+
+162
+00:11:11,590 --> 00:11:13,330
+If a couple things don't.
+
+163
+00:11:13,330 --> 00:11:14,220
+Don't worry about it.
+
+164
+00:11:14,230 --> 00:11:17,560
+I mean it happens we're not going to understand every single thing.
+
+165
+00:11:17,710 --> 00:11:18,850
+The first time around.
+
+166
+00:11:18,850 --> 00:11:25,360
+So you know it'll it'll come to you in whether it's in this course in the future and in future projects
+
+167
+00:11:25,360 --> 00:11:31,150
+and in sections or just creating your own projects and so on.
+
+168
+00:11:31,150 --> 00:11:31,410
+All right.
+
+169
+00:11:31,420 --> 00:11:31,990
+So that's it.
+
+170
+00:11:32,020 --> 00:11:33,270
+I'll see you in the next video.
+

@@ -1,0 +1,660 @@
+﻿1
+00:00:00,290 --> 00:00:00,560
+All right.
+
+2
+00:00:00,570 --> 00:00:06,420
+So now we're going to start on the WHO WE ARE section so right underneath the what we do section.
+
+3
+00:00:06,480 --> 00:00:17,040
+We're gonna put a comment and let's say section who we are and we're going to use a section tag with
+
+4
+00:00:17,040 --> 00:00:25,710
+an I.D. of who and you guys can see the the the pattern in how I do things so basically we have a header
+
+5
+00:00:25,710 --> 00:00:32,040
+at the top or head or NAV combination whatever and then everything under that is usually a section and
+
+6
+00:00:32,040 --> 00:00:36,660
+that's how I build pretty much all my web sites in you eyes.
+
+7
+00:00:36,660 --> 00:00:45,570
+So inside this section basically we're gonna have a flex box with two items which is gonna be one the
+
+8
+00:00:45,570 --> 00:00:48,980
+background image one is gonna be this side here.
+
+9
+00:00:48,990 --> 00:00:51,660
+And I want it to go all the way to the edge.
+
+10
+00:00:51,660 --> 00:00:55,770
+So this goes all the way over this goes all the way over so we're not we're actually not going to use
+
+11
+00:00:55,770 --> 00:00:59,280
+a container in this section.
+
+12
+00:00:59,280 --> 00:01:07,640
+So the section itself is gonna be the Flex box and then the two items let's do one we'll call it who
+
+13
+00:01:07,660 --> 00:01:09,580
+Dash I am G.
+
+14
+00:01:09,670 --> 00:01:11,010
+It's just going to be a background image.
+
+15
+00:01:11,020 --> 00:01:19,810
+So no no content inside the div and then let's call this one who dash text history of the image in the
+
+16
+00:01:19,810 --> 00:01:23,690
+way of the text and these are gonna be flexed flex items.
+
+17
+00:01:23,770 --> 00:01:33,130
+Now the WHO text we're going to also add a couple utility classes I want to add big dark tree stuff
+
+18
+00:01:33,130 --> 00:01:39,910
+to create and I'm going to do p. 2 I'm going to add some padding classes that have padding all the way
+
+19
+00:01:39,910 --> 00:01:47,470
+around that's why I don't have P Y P Y is for the up and down access P2 or P anything is going to be
+
+20
+00:01:47,470 --> 00:01:51,240
+padding all around as you can see that we have here.
+
+21
+00:01:51,700 --> 00:02:01,680
+So inside here it's put a H two and this H2 is gonna be an M heading so you can see that we we almost
+
+22
+00:02:01,680 --> 00:02:06,560
+create our own framework when we do this if you have any experience with bootstrap or any kind of each
+
+23
+00:02:06,560 --> 00:02:12,360
+team LCROSS framework you have built in classes that do certain things and that's pretty much what we're
+
+24
+00:02:12,360 --> 00:02:18,300
+doing is we're creating our own built in classes so that we can use them over and over instead of styling
+
+25
+00:02:18,330 --> 00:02:25,200
+you know the the WHO's section H to the what section H H2 and stuff like that we just have these base
+
+26
+00:02:25,200 --> 00:02:29,430
+utilities that we can use and I think that's the best way to do things.
+
+27
+00:02:29,490 --> 00:02:32,550
+So who is going to be inside the tech's primary
+
+28
+00:02:36,630 --> 00:02:42,630
+and if you don't know for instance bootstrap or front end framework like that then you'll see once you
+
+29
+00:02:42,630 --> 00:02:49,440
+start to learn bootstrap that a lot of these classes I actually take from from bootstrap like text primary
+
+30
+00:02:50,340 --> 00:02:59,590
+so let's do who and then outside of the span will do we are and then after the H two let's do a paragraph
+
+31
+00:02:59,610 --> 00:03:07,600
+and I think I did 30 here let's do Lorem 30 and then let's see underneath the paragraph we're gonna
+
+32
+00:03:07,620 --> 00:03:17,670
+have another h three or h three and we're gonna say our team and then a U L and I'm going to give this
+
+33
+00:03:17,670 --> 00:03:26,520
+you all a class of list because we need to style it it has some bottom borders take away the the bullet
+
+34
+00:03:26,520 --> 00:03:27,900
+points stuff like that.
+
+35
+00:03:28,080 --> 00:03:35,820
+So let's do an ally we have how many looks like what we have five here so times five and we'll just
+
+36
+00:03:35,820 --> 00:03:41,970
+put some names in here like Mark Smith will say that Mark is the CEO
+
+37
+00:03:44,250 --> 00:03:50,580
+and let's to Shannon Johnson the CFO
+
+38
+00:03:53,840 --> 00:04:01,580
+and see John Corbett I don't know where I get these names from a lead accountant
+
+39
+00:04:07,410 --> 00:04:13,280
+and let's see we have Janet Williams
+
+40
+00:04:15,380 --> 00:04:29,540
+investment manager and then finally we have Kara Jackson senior accountant and I tried to keep the names
+
+41
+00:04:30,200 --> 00:04:35,600
+you know with this this image right here actually I'm missing one I the six people here that that's
+
+42
+00:04:35,600 --> 00:04:38,720
+fine whatever you want to add another one you can.
+
+43
+00:04:38,870 --> 00:04:39,170
+All right.
+
+44
+00:04:39,190 --> 00:04:45,860
+So that's pretty much it for the section let's save it let's go back to ours and there we go so it looks
+
+45
+00:04:45,860 --> 00:04:48,970
+like crap obviously but we're gonna fix that.
+
+46
+00:04:49,100 --> 00:04:56,820
+So in our style CSX just gonna go ahead and make this a little smaller let's make sure that.
+
+47
+00:04:56,880 --> 00:05:01,030
+OK so that's still all right.
+
+48
+00:05:01,090 --> 00:05:03,460
+So let's go under the what section
+
+49
+00:05:07,500 --> 00:05:14,630
+it's good to keep your your CSX and your age team all commented out just just so you can see you know
+
+50
+00:05:15,590 --> 00:05:20,060
+what goes where I think it better organizes your your code.
+
+51
+00:05:20,060 --> 00:05:27,900
+So like I said Who itself the idea of who is going to be the Flex container so let's say I.D. who and
+
+52
+00:05:27,950 --> 00:05:38,610
+let's say we want to display flex flex and I want just equal sides.
+
+53
+00:05:38,620 --> 00:05:47,930
+So what I'm going to do is say any div that's inside the WHO div I'm going to say flex 1.
+
+54
+00:05:48,060 --> 00:05:48,730
+OK.
+
+55
+00:05:48,730 --> 00:05:50,380
+The divs are the Flex items right.
+
+56
+00:05:50,380 --> 00:05:54,550
+We have the section which is the Flex box or the Flex container.
+
+57
+00:05:54,550 --> 00:06:02,990
+And then each of these is the is the is the div or the item and I'm setting it to flex one.
+
+58
+00:06:03,070 --> 00:06:05,740
+So now it's just split half and half.
+
+59
+00:06:05,740 --> 00:06:08,170
+Now on this side I want the background image.
+
+60
+00:06:08,170 --> 00:06:09,120
+So let's do that.
+
+61
+00:06:09,130 --> 00:06:19,520
+Let's say the idea of who in the class of who dash image I'm going to set the background to a U.R.L.
+
+62
+00:06:20,850 --> 00:06:27,970
+and the image is gonna we want to go outside of CSX inside of image and we want the people dot J Peg
+
+63
+00:06:28,520 --> 00:06:31,160
+okay and we're going to add our no repeat.
+
+64
+00:06:31,480 --> 00:06:34,330
+We're going to center and cover
+
+65
+00:06:38,230 --> 00:06:42,010
+so now we have our image and then see
+
+66
+00:06:46,960 --> 00:06:51,280
+over here we shouldn't really have to do anything else we just make this a little bigger.
+
+67
+00:06:51,280 --> 00:06:56,710
+We shouldn't have to do anything except our utility classes because that'll cover the padding as well
+
+68
+00:06:56,710 --> 00:06:57,940
+as the background color.
+
+69
+00:06:57,940 --> 00:07:04,690
+So remember we have a big dark let's go up here where we have the beachy light.
+
+70
+00:07:05,110 --> 00:07:06,580
+I think we have a big light.
+
+71
+00:07:06,580 --> 00:07:08,260
+Oh we didn't even add that huh.
+
+72
+00:07:08,320 --> 00:07:09,430
+No we didn't.
+
+73
+00:07:09,430 --> 00:07:09,780
+All right.
+
+74
+00:07:09,790 --> 00:07:12,550
+So let's put that under the text here.
+
+75
+00:07:12,620 --> 00:07:27,480
+Let's say BFG light which has a background of light gray and color 3 3 3 and then let's also
+
+76
+00:07:30,370 --> 00:07:35,380
+copy this down and this is gonna be beachy dark
+
+77
+00:07:38,110 --> 00:07:39,210
+and then beachy dark.
+
+78
+00:07:39,220 --> 00:07:41,320
+We're just going to kind of reverse this.
+
+79
+00:07:41,470 --> 00:07:50,260
+So we're going to do 3 3 3 and then for the color let's switch we'll do white for the color colors and
+
+80
+00:07:50,260 --> 00:07:51,670
+save.
+
+81
+00:07:51,670 --> 00:07:59,830
+So now this has the light gray this as the dark we need to add some padding here or not add the padding
+
+82
+00:07:59,860 --> 00:08:05,160
+but add the class of I think we use P to you know use P too.
+
+83
+00:08:05,360 --> 00:08:10,030
+So let's go right under where we did all these paintings
+
+84
+00:08:12,990 --> 00:08:14,730
+copy it and I'll do just
+
+85
+00:08:18,610 --> 00:08:19,880
+do we do a dash.
+
+86
+00:08:19,930 --> 00:08:29,350
+Yeah P dash 2 so we have one two and three and I'm going to use the same amounts.
+
+87
+00:08:29,400 --> 00:08:33,510
+So one point five two and three except we want it to be on all sides.
+
+88
+00:08:33,510 --> 00:08:38,850
+We just want to get rid of the zero because um we just have this one value which will be for all sides
+
+89
+00:08:38,850 --> 00:08:40,230
+so let's save that.
+
+90
+00:08:40,230 --> 00:08:41,770
+And now check it out.
+
+91
+00:08:41,820 --> 00:08:43,890
+We have our padding.
+
+92
+00:08:43,890 --> 00:08:45,600
+We have our background color.
+
+93
+00:08:45,600 --> 00:08:47,910
+Well we didn't do is the list.
+
+94
+00:08:47,910 --> 00:08:55,200
+Now the list is I'm going to make this a utility because we might want to use this less styling somewhere
+
+95
+00:08:55,200 --> 00:09:03,900
+else so I don't want to I don't want to you know keep it inside the The Who div or the WHO I.D..
+
+96
+00:09:04,200 --> 00:09:07,410
+So the list I'm going to put under the button here
+
+97
+00:09:10,320 --> 00:09:20,440
+and let's first of all give it some margin on the top and bottom will do zero point five rim zero.
+
+98
+00:09:20,640 --> 00:09:23,740
+OK so now it's at least you have some space there.
+
+99
+00:09:24,040 --> 00:09:29,990
+And then I'm gonna take away the bullet points so list style none.
+
+100
+00:09:30,460 --> 00:09:32,710
+And for the list items
+
+101
+00:09:36,780 --> 00:09:43,080
+I'm going to add some padding to the top and bottom zero point five Ram.
+
+102
+00:09:43,470 --> 00:09:50,290
+And then let's add a border bottom and let's do four for four.
+
+103
+00:09:50,760 --> 00:09:55,970
+Let's two dotted has a style and one pixel and save.
+
+104
+00:09:56,720 --> 00:09:56,990
+OK.
+
+105
+00:09:57,000 --> 00:09:57,990
+So it's pretty good.
+
+106
+00:10:02,040 --> 00:10:03,780
+All right cool.
+
+107
+00:10:03,960 --> 00:10:05,780
+So let's see.
+
+108
+00:10:05,790 --> 00:10:10,530
+I think the clients section is easy enough for us to go ahead and do in this video.
+
+109
+00:10:10,530 --> 00:10:25,110
+So underneath who we are let's put section clients and we'll do a section with an idea of clients and
+
+110
+00:10:25,110 --> 00:10:31,070
+I want to add a class of p y one so padding.
+
+111
+00:10:31,070 --> 00:10:38,550
+It'll be one point five ram on the top and bottom and then we want a container because we want or we
+
+112
+00:10:38,550 --> 00:10:42,810
+want to move everything to the metal and we want an h to.
+
+113
+00:10:42,840 --> 00:10:52,440
+I'm going to give this a class of M heading as well as text center and we're gonna say our clients but
+
+114
+00:10:52,440 --> 00:10:54,330
+the word our will be green.
+
+115
+00:10:54,330 --> 00:11:01,240
+So we want to do a span here of text primary we'll say our.
+
+116
+00:11:01,290 --> 00:11:05,600
+And then outside of the span we'll say clients.
+
+117
+00:11:05,890 --> 00:11:14,530
+Now we're going to use flex again here to align the images so we're going to do a class of items or
+
+118
+00:11:15,860 --> 00:11:16,590
+let's see.
+
+119
+00:11:16,660 --> 00:11:19,550
+Let's do um
+
+120
+00:11:22,950 --> 00:11:23,380
+you know what.
+
+121
+00:11:23,400 --> 00:11:28,020
+I think you if we look in our style CSX I mean just.
+
+122
+00:11:28,050 --> 00:11:28,330
+OK.
+
+123
+00:11:28,350 --> 00:11:30,690
+So we did target what items.
+
+124
+00:11:30,690 --> 00:11:39,030
+So it's we can use the class items here as well and inside items we're just going to have basically
+
+125
+00:11:39,260 --> 00:11:45,510
+a div with the image K so the div is going to be the actual flex item.
+
+126
+00:11:45,510 --> 00:11:48,300
+And then each div will have an image.
+
+127
+00:11:48,300 --> 00:11:56,280
+And this is gonna be dot slash since we're in the index each time l We want to be in the same folder
+
+128
+00:11:56,280 --> 00:12:01,710
+and then we want to go into the image folder and then we want to go into logos and I'm gonna do logo
+
+129
+00:12:01,710 --> 00:12:08,130
+one PMG and we make this a little bigger and then for the all.
+
+130
+00:12:08,170 --> 00:12:11,120
+I'm just going to say also a client.
+
+131
+00:12:11,390 --> 00:12:11,790
+OK.
+
+132
+00:12:11,980 --> 00:12:18,700
+Obviously we don't put anything in here it's just the image but let's copy this down five times and
+
+133
+00:12:18,700 --> 00:12:20,380
+then we're just going to change the image.
+
+134
+00:12:20,380 --> 00:12:25,410
+Those will be local five four three and two.
+
+135
+00:12:26,080 --> 00:12:34,220
+And I'm also just going to add a P1 class here or p y one to add some padding here.
+
+136
+00:12:34,240 --> 00:12:34,560
+All right.
+
+137
+00:12:34,570 --> 00:12:37,340
+So let's save that and take a look.
+
+138
+00:12:37,380 --> 00:12:37,710
+OK.
+
+139
+00:12:37,720 --> 00:12:43,480
+So obviously it's just going to show it's just each image on a separate line because they're they're
+
+140
+00:12:43,480 --> 00:12:48,660
+in a div so divs are block level and we haven't we haven't made this a flex box yet.
+
+141
+00:12:48,670 --> 00:12:52,180
+So we want to do that so that we can align them.
+
+142
+00:12:52,440 --> 00:13:05,170
+So all right here let's say clients and let's take the client's I.D. and the items class and let's display
+
+143
+00:13:06,070 --> 00:13:08,690
+that as flex.
+
+144
+00:13:08,830 --> 00:13:12,400
+Once I do that you'll see that it's going to align them this way.
+
+145
+00:13:12,400 --> 00:13:14,140
+Now the images are way too big.
+
+146
+00:13:14,140 --> 00:13:16,030
+They're going off the screen here.
+
+147
+00:13:16,030 --> 00:13:22,840
+So I'm going to target clients items and then the images themselves.
+
+148
+00:13:23,380 --> 00:13:26,450
+And for one I'm going to display a block.
+
+149
+00:13:26,800 --> 00:13:29,230
+OK I want to be able to add a width to them.
+
+150
+00:13:29,230 --> 00:13:35,770
+I'm gonna say margin auto so that they're right in the center and then I'm going to set the width of
+
+151
+00:13:35,770 --> 00:13:40,090
+the image to 60 percent of its container and we'll save that.
+
+152
+00:13:40,090 --> 00:13:41,920
+And there we go.
+
+153
+00:13:41,920 --> 00:13:42,220
+OK.
+
+154
+00:13:42,250 --> 00:13:44,980
+So that's that's it for the client section.
+
+155
+00:13:44,980 --> 00:13:51,610
+So in the next video we're going to start to work on the contact and in the contact we have a little
+
+156
+00:13:51,610 --> 00:13:58,600
+form here we also have a map case or where we're gonna have to do to implement a map is get an API key
+
+157
+00:13:58,600 --> 00:14:05,620
+from Google Maps so you will have to log into your Google account and we're gonna use the console to
+
+158
+00:14:05,620 --> 00:14:07,180
+generate an API key.
+
+159
+00:14:07,620 --> 00:14:08,310
+OK.
+
+160
+00:14:08,350 --> 00:14:10,470
+And if and if you don't know what that is.
+
+161
+00:14:10,570 --> 00:14:12,280
+You know I've never heard of an API key.
+
+162
+00:14:12,280 --> 00:14:13,190
+Don't worry about it.
+
+163
+00:14:13,230 --> 00:14:16,590
+We're going to go step by step and we're gonna go through it.
+
+164
+00:14:16,750 --> 00:14:16,990
+All right.
+
+165
+00:14:17,000 --> 00:14:18,310
+So I'll see you in the next video.
+

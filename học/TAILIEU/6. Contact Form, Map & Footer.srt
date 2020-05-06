@@ -1,0 +1,940 @@
+﻿1
+00:00:00,230 --> 00:00:04,190
+OK so now we're gonna work on the contact section which does have a Google map.
+
+2
+00:00:04,200 --> 00:00:09,060
+We'll probably get to it in this video would if not then we'll we'll get to it in the next one because
+
+3
+00:00:09,060 --> 00:00:10,530
+I do want to do the form first.
+
+4
+00:00:10,520 --> 00:00:13,050
+So let's go down to the bottom here.
+
+5
+00:00:13,050 --> 00:00:22,050
+We'll add another comment for section of contact and let's do a section tag giving an idea of contact
+
+6
+00:00:23,220 --> 00:00:30,840
+and we're going to have basically I call this contact section is going to be a flex container.
+
+7
+00:00:30,840 --> 00:00:36,080
+And then the map and the form are gonna be the Flex items.
+
+8
+00:00:36,070 --> 00:00:42,750
+So the first one will be the form so I'll give it a class of its to contact dash form.
+
+9
+00:00:43,620 --> 00:00:48,690
+So this will have the form in it and then I'm gonna do a class of map.
+
+10
+00:00:48,690 --> 00:00:52,400
+Now the Google map that nothing goes inside of here.
+
+11
+00:00:52,410 --> 00:00:55,630
+Everything is basically done through javascript.
+
+12
+00:00:55,650 --> 00:00:59,000
+OK so we'll have to look into that after.
+
+13
+00:00:59,190 --> 00:01:00,800
+But let's add the form for now.
+
+14
+00:01:00,810 --> 00:01:09,610
+So I'm actually going to also add class of B G dash primary which I don't believe we've done yet but
+
+15
+00:01:09,610 --> 00:01:14,560
+this is where we have the green background the primary color as the background.
+
+16
+00:01:14,860 --> 00:01:19,670
+And then I'm gonna do P2 which will give padding all around.
+
+17
+00:01:19,750 --> 00:01:22,380
+So inside here let's do an H two.
+
+18
+00:01:22,390 --> 00:01:29,920
+Let's use our M heading class and we'll say contact us.
+
+19
+00:01:30,470 --> 00:01:43,130
+And then inside the paragraph will say please use the form below to contact us okay.
+
+20
+00:01:43,140 --> 00:01:45,210
+And then let's do a form.
+
+21
+00:01:45,210 --> 00:01:47,600
+We don't need an action we're not actually submitting it.
+
+22
+00:01:48,600 --> 00:01:54,200
+And then here we'll do a class of form dash group which wraps the label in the input.
+
+23
+00:01:54,840 --> 00:02:06,510
+So label safe for name and then let's do an input with the type of text and the name will be name I.D.
+
+24
+00:02:06,510 --> 00:02:10,860
+We'll be name and then let's also add a placeholder
+
+25
+00:02:13,970 --> 00:02:16,360
+and we'll say enter name.
+
+26
+00:02:17,480 --> 00:02:17,850
+OK.
+
+27
+00:02:17,880 --> 00:02:24,480
+So if we take a look at that it can see it's very ugly looking for now and then we'll to copy this form
+
+28
+00:02:24,480 --> 00:02:26,340
+group what's copy this down.
+
+29
+00:02:26,350 --> 00:02:30,350
+See two three four for these.
+
+30
+00:02:30,480 --> 00:02:32,640
+The second one is gonna be the email.
+
+31
+00:02:32,640 --> 00:02:35,960
+So let's change the four attribute to email.
+
+32
+00:02:35,970 --> 00:02:37,880
+We'll change this to email.
+
+33
+00:02:38,190 --> 00:02:49,860
+The type will change to email the name and the I.D. email and we'll say enter email for the place holder
+
+34
+00:02:50,320 --> 00:02:55,120
+K and then we're gonna have phone number.
+
+35
+00:02:55,200 --> 00:03:04,620
+So this is gonna be phone and let's see the type we'll just keep that as text the name is gonna be phone
+
+36
+00:03:05,580 --> 00:03:10,650
+I.D. phone and then we'll say enter
+
+37
+00:03:14,290 --> 00:03:17,030
+a phone number.
+
+38
+00:03:17,030 --> 00:03:18,980
+And then this last one is gonna be a message.
+
+39
+00:03:18,980 --> 00:03:27,660
+So for message label message and it's gonna be a text area instead of an input.
+
+40
+00:03:27,680 --> 00:03:34,460
+So I'm going to get rid of the input in the type and I'm gonna replace that with text area and we need
+
+41
+00:03:34,460 --> 00:03:41,420
+to add an ending text area tag as well and we'll say enter message for the place holder will change
+
+42
+00:03:41,420 --> 00:03:46,590
+the name and the I.D. to message as well.
+
+43
+00:03:46,730 --> 00:03:47,080
+OK.
+
+44
+00:03:47,090 --> 00:03:49,960
+Now we only we just need to do a submit.
+
+45
+00:03:49,970 --> 00:04:01,760
+So let's go under the div and let's do an input with the type of submit and the value is just the text
+
+46
+00:04:01,760 --> 00:04:03,520
+that's gonna read so we'll just say.
+
+47
+00:04:03,680 --> 00:04:12,030
+I will say send for the value and then I just want a class of B T N and I'm also gonna make this dark
+
+48
+00:04:12,050 --> 00:04:17,810
+remember we have that B10 and dark class that we created in our C Ss so let's save that and it should
+
+49
+00:04:17,810 --> 00:04:19,620
+look like this.
+
+50
+00:04:19,640 --> 00:04:19,950
+OK.
+
+51
+00:04:19,970 --> 00:04:26,690
+So now let's add the styling for the form we also want to add that big primary right here because we
+
+52
+00:04:26,690 --> 00:04:28,610
+don't have that as a class.
+
+53
+00:04:28,820 --> 00:04:40,130
+So let's go up to our utilities go right under big dark and say B G primary in background is gonna be
+
+54
+00:04:40,130 --> 00:04:41,870
+that this green color.
+
+55
+00:04:43,500 --> 00:04:44,050
+OK.
+
+56
+00:04:44,060 --> 00:04:46,540
+And then color is gonna be white.
+
+57
+00:04:47,840 --> 00:04:50,930
+So that's big primary.
+
+58
+00:04:50,930 --> 00:05:04,390
+Now down below down at the bottom under the clients section know we'll do a c section clients that's
+
+59
+00:05:04,520 --> 00:05:06,260
+a section
+
+60
+00:05:08,480 --> 00:05:11,090
+contact.
+
+61
+00:05:11,090 --> 00:05:11,740
+Let's see.
+
+62
+00:05:11,750 --> 00:05:22,770
+So are the contact itself the idea of contact that's gonna be our flex so let's say display flex Kay
+
+63
+00:05:26,720 --> 00:05:28,760
+now the map.
+
+64
+00:05:28,880 --> 00:05:36,770
+Let's see I want the contact form and the map by default to have a flex one so that there even when
+
+65
+00:05:36,770 --> 00:05:41,560
+it's on a wide screen I'm going to change it so that the form is smaller and the map is bigger.
+
+66
+00:05:41,570 --> 00:05:48,680
+But for now let's take contact in the class of map.
+
+67
+00:05:48,920 --> 00:05:55,910
+Actually what we can do is just add them both to put a comma and we'll say take contact in the class
+
+68
+00:05:55,910 --> 00:06:03,740
+of contact form and let's say flex one for both.
+
+69
+00:06:03,740 --> 00:06:07,570
+So now it's just even now it's style.
+
+70
+00:06:07,580 --> 00:06:10,880
+The the inputs to label stuff like that.
+
+71
+00:06:10,940 --> 00:06:20,600
+So the form group so contact and then contact form and then the form group.
+
+72
+00:06:20,600 --> 00:06:24,880
+I'm just gonna add a margin so that they're separated a bit.
+
+73
+00:06:24,910 --> 00:06:29,300
+So let's do zero point seven five rems.
+
+74
+00:06:29,480 --> 00:06:30,220
+OK.
+
+75
+00:06:30,290 --> 00:06:34,340
+And then we'll do the label because I want the label to display block.
+
+76
+00:06:34,340 --> 00:06:35,540
+Right now it's in line.
+
+77
+00:06:35,540 --> 00:06:39,960
+You can see it's you know it's to the left of the input but I want it to be on top.
+
+78
+00:06:40,010 --> 00:06:41,270
+So let's take.
+
+79
+00:06:41,270 --> 00:06:43,080
+Contact.
+
+80
+00:06:43,430 --> 00:06:53,210
+Contact form label and let's display as a block level elements of a save that you'll see that now it's
+
+81
+00:06:53,210 --> 00:06:54,560
+on top.
+
+82
+00:06:54,620 --> 00:06:54,950
+All right.
+
+83
+00:06:54,950 --> 00:06:59,120
+And then for the input in the text area so we'll see.
+
+84
+00:06:59,120 --> 00:07:01,920
+Contact.
+
+85
+00:07:02,450 --> 00:07:08,770
+Contact form input as well.
+
+86
+00:07:12,220 --> 00:07:16,880
+As the text area.
+
+87
+00:07:17,230 --> 00:07:20,550
+Let's go ahead and set a width of 100 percent.
+
+88
+00:07:20,560 --> 00:07:26,770
+So it goes all the way across and let's add some padding say zero point five.
+
+89
+00:07:26,780 --> 00:07:27,490
+And there we go.
+
+90
+00:07:27,490 --> 00:07:31,920
+So that looks pretty decent now.
+
+91
+00:07:31,990 --> 00:07:32,290
+Yeah.
+
+92
+00:07:32,290 --> 00:07:33,520
+Now we'll work on the map.
+
+93
+00:07:34,510 --> 00:07:38,740
+So what we're gonna have to do is you can have to log into your Google account and then I want you to
+
+94
+00:07:38,740 --> 00:07:46,240
+just type in search Google console not the search console we want the cloud console because we're working
+
+95
+00:07:46,240 --> 00:07:53,140
+with a Google map that means that we need an API key because it has to make a request to the Google
+
+96
+00:07:53,140 --> 00:07:56,660
+servers to get the location and all that stuff.
+
+97
+00:07:56,740 --> 00:08:01,550
+So let's let's go.
+
+98
+00:08:01,630 --> 00:08:02,980
+You gonna have to have a project.
+
+99
+00:08:03,000 --> 00:08:03,270
+OK.
+
+100
+00:08:03,280 --> 00:08:05,260
+Now I already have one called dev one.
+
+101
+00:08:05,260 --> 00:08:09,610
+If you don't have a project just do new project call it whatever you want.
+
+102
+00:08:09,610 --> 00:08:16,320
+Once you have a project if you click over here an API and services it's going to show you.
+
+103
+00:08:17,590 --> 00:08:23,510
+Let's see right here we want to say enable API is in services and it's going to show you all the different
+
+104
+00:08:23,510 --> 00:08:26,490
+Google services which there's tons of.
+
+105
+00:08:26,870 --> 00:08:33,830
+We want maps right here maps javascript API.
+
+106
+00:08:33,830 --> 00:08:38,790
+OK so you weren't to want to click that mine's already enabled you'll probably see a button that says
+
+107
+00:08:38,790 --> 00:08:45,270
+enable make sure you click that and then you should see something like this.
+
+108
+00:08:45,270 --> 00:08:46,770
+Make sure it's enabled.
+
+109
+00:08:46,770 --> 00:08:53,460
+Mine is as you can see I have a disable option and then you want to go to credentials and you want to
+
+110
+00:08:53,460 --> 00:08:57,360
+create an API key so let's see.
+
+111
+00:08:57,900 --> 00:08:59,970
+I mean you can see mine right here.
+
+112
+00:09:02,780 --> 00:09:04,880
+Where would we go here.
+
+113
+00:09:04,890 --> 00:09:11,470
+I mean I already have one but you should see something like create new API key I believe.
+
+114
+00:09:11,760 --> 00:09:13,560
+Credentials API manager.
+
+115
+00:09:13,560 --> 00:09:14,190
+Here we go.
+
+116
+00:09:14,700 --> 00:09:23,520
+So create credentials API key and it'll give you something that looks like this and you can restricted
+
+117
+00:09:23,520 --> 00:09:27,010
+to certain domains and stuff but we're not going to do that just go ahead and save it.
+
+118
+00:09:27,510 --> 00:09:30,990
+So now you should have an API key.
+
+119
+00:09:31,340 --> 00:09:33,580
+I'm just going to see you.
+
+120
+00:09:33,780 --> 00:09:39,610
+I just want to check which one of these I actually used.
+
+121
+00:09:42,050 --> 00:09:43,780
+Let's see where is it.
+
+122
+00:09:47,350 --> 00:09:48,180
+Yes.
+
+123
+00:09:48,950 --> 00:09:49,270
+All right.
+
+124
+00:09:49,280 --> 00:09:55,160
+So I use this one here so you can actually copy it if you click this it'll copy it to your click clipboard
+
+125
+00:09:55,490 --> 00:10:01,010
+and for now I'm going to go into my index each team Tim Allen I'm just gonna put this inside of a comment
+
+126
+00:10:01,010 --> 00:10:04,640
+down here just so I have it all right.
+
+127
+00:10:04,640 --> 00:10:12,330
+Now next thing we're gonna want to do is go ahead and search for Google Map docs.
+
+128
+00:10:14,010 --> 00:10:16,620
+And click on the first link here the overview.
+
+129
+00:10:16,710 --> 00:10:19,460
+And this basically tells us what we need to do.
+
+130
+00:10:19,590 --> 00:10:27,600
+So we need to add a script tag so a script tag just includes a javascript file and we're including the
+
+131
+00:10:27,660 --> 00:10:29,150
+javascript maps file.
+
+132
+00:10:29,160 --> 00:10:32,510
+But we also need to put in our API key.
+
+133
+00:10:32,840 --> 00:10:33,210
+All right.
+
+134
+00:10:33,210 --> 00:10:36,450
+And then we need to add a little bit of JavaScript.
+
+135
+00:10:36,450 --> 00:10:42,360
+Ours is going to be it's going to resemble this but instead of putting it inside of script tags right
+
+136
+00:10:42,390 --> 00:10:47,950
+in our each team Al we're going to put it in that main J main dot J S file that we created.
+
+137
+00:10:48,090 --> 00:10:50,730
+And notice that they have a div with the idea of map.
+
+138
+00:10:50,730 --> 00:10:54,470
+We used a class but it doesn't really matter we can target a div or a class.
+
+139
+00:10:54,570 --> 00:10:56,720
+And that's where the map goes.
+
+140
+00:10:57,000 --> 00:11:01,860
+And then you can see up here they set the height to 100 percent because it's like it's like a background
+
+141
+00:11:01,860 --> 00:11:07,830
+image it needs to have a height or it needs to have some kind of content in it to actually display.
+
+142
+00:11:07,860 --> 00:11:12,230
+So what we're gonna do is just copy this right here this script.
+
+143
+00:11:12,600 --> 00:11:14,430
+We're gonna go back into our H team.
+
+144
+00:11:14,430 --> 00:11:16,650
+I'll go right above the body.
+
+145
+00:11:16,650 --> 00:11:20,940
+We're gonna pace that in and where it says your API key in all caps.
+
+146
+00:11:20,940 --> 00:11:26,430
+You're gonna grab your API key and just put it right in there so when it controls C to copy it and then
+
+147
+00:11:26,430 --> 00:11:30,320
+control V to pace that right in there.
+
+148
+00:11:30,440 --> 00:11:30,810
+All right.
+
+149
+00:11:30,870 --> 00:11:42,720
+Now we also need to include our main dot J S file so we're gonna go right above it and put in a script
+
+150
+00:11:42,720 --> 00:11:43,680
+tag.
+
+151
+00:11:43,680 --> 00:11:49,270
+So if we do script and then a colon and then S.R. C that will add a source attribute.
+
+152
+00:11:49,380 --> 00:11:49,690
+OK.
+
+153
+00:11:49,740 --> 00:11:52,860
+Just like an image when you have an image you point it to a source.
+
+154
+00:11:52,860 --> 00:11:53,150
+Right.
+
+155
+00:11:53,160 --> 00:11:56,900
+Well with a javascript file we also use source.
+
+156
+00:11:57,120 --> 00:12:02,910
+So we're going to point to the J S folder so we can do.
+
+157
+00:12:03,150 --> 00:12:03,370
+Yeah.
+
+158
+00:12:03,390 --> 00:12:12,260
+We'll just do J ust slash main Todd J.S. now I mean we're not talking too much about JavaScript in this
+
+159
+00:12:12,260 --> 00:12:19,900
+course but just remember when you include javascript you use source when you include CSX you use a traffic.
+
+160
+00:12:19,980 --> 00:12:20,260
+OK.
+
+161
+00:12:20,290 --> 00:12:24,560
+And when I know that some people when they're starting out they get that confused they'll do a they'll
+
+162
+00:12:24,560 --> 00:12:29,930
+do link and then source like that or a script tag within a traffic.
+
+163
+00:12:29,930 --> 00:12:33,740
+Just remember that JavaScript uses the source to attribute.
+
+164
+00:12:34,400 --> 00:12:37,300
+So that will include the main J S file.
+
+165
+00:12:37,430 --> 00:12:47,300
+So let's go ahead and save this and then we want to actually go into our main dot J ust file and I'm
+
+166
+00:12:47,390 --> 00:12:51,280
+I'm gonna actually paste in the javascript and then I'll quickly go over it.
+
+167
+00:12:51,290 --> 00:12:53,970
+Like I said this is not a javascript course.
+
+168
+00:12:54,320 --> 00:12:57,350
+I don't really want to get too much into it.
+
+169
+00:12:57,380 --> 00:13:02,300
+I do have a 21 hour javascript course on you to me if you're interested which I would recommend after
+
+170
+00:13:02,300 --> 00:13:03,200
+this one.
+
+171
+00:13:03,470 --> 00:13:10,470
+So I'm going to pace this and you guys can copy this or you can you can get it from the finished project.
+
+172
+00:13:10,700 --> 00:13:17,750
+And basically what's happening here if we look in the index page Tim Al it's linking to the maps API
+
+173
+00:13:17,870 --> 00:13:24,200
+and it's it has this callback equals init to map this init map is a function.
+
+174
+00:13:24,210 --> 00:13:27,020
+OK it's this function here that we're creating.
+
+175
+00:13:27,020 --> 00:13:33,410
+So it's going to call this in nit map and it is short for initialize and then what we're doing here
+
+176
+00:13:33,800 --> 00:13:41,180
+is putting in our location which is this is actually called a javascript object and it has a latitude
+
+177
+00:13:41,210 --> 00:13:42,620
+and longitude.
+
+178
+00:13:42,620 --> 00:13:48,740
+Now this this latitude and longitude is actually is centred in Boston Massachusetts.
+
+179
+00:13:48,800 --> 00:13:54,150
+If you want your map to be somewhere else you can get the latitude and longitude from from there.
+
+180
+00:13:54,260 --> 00:13:56,390
+And there certain sites you can do that with.
+
+181
+00:13:56,390 --> 00:14:06,260
+So let's just say like get the latitude and longitude from an address and if you go to lat long dot
+
+182
+00:14:06,290 --> 00:14:10,570
+net you can put in any address here like it or anything.
+
+183
+00:14:10,570 --> 00:14:12,170
+We could just say like New York
+
+184
+00:14:14,890 --> 00:14:21,700
+and find and it'll get us just a random place in New York which you can see here so you could put any
+
+185
+00:14:21,710 --> 00:14:26,960
+any any latitude and longitude that you want into this object.
+
+186
+00:14:26,970 --> 00:14:27,290
+OK.
+
+187
+00:14:27,320 --> 00:14:30,640
+But if we're just going to stick with with Boston Massachusetts.
+
+188
+00:14:31,180 --> 00:14:37,010
+Now this here is creating what's called a variable called map and we're sending it to a new Google map.
+
+189
+00:14:37,240 --> 00:14:42,070
+And then this document dot query selector is targeting the class of map.
+
+190
+00:14:42,120 --> 00:14:42,420
+OK.
+
+191
+00:14:42,430 --> 00:14:45,970
+Now remember in our index each team Al we have this class of map.
+
+192
+00:14:46,540 --> 00:14:52,420
+So we're targeting that and that's where we want to insert the map and you can change the zoom level.
+
+193
+00:14:52,420 --> 00:14:57,190
+So we're going to keep it at 14 but you can lower it if you want or higher it.
+
+194
+00:14:57,460 --> 00:15:03,880
+And then we're saying the center position is going to be in the location K the location was also put
+
+195
+00:15:03,880 --> 00:15:06,770
+into a variable which is basically a place holder.
+
+196
+00:15:06,890 --> 00:15:10,120
+And if you don't understand anything I'm saying don't worry about it.
+
+197
+00:15:10,420 --> 00:15:16,030
+Down here is we're reporting on marker because we want a marker in that special location.
+
+198
+00:15:16,030 --> 00:15:22,420
+So we're saying create a new marker and the position should be the location which is this variable.
+
+199
+00:15:22,570 --> 00:15:26,440
+And the map should show this map.
+
+200
+00:15:26,680 --> 00:15:30,550
+So hopefully that makes at least a little bit of sense of what's going on here.
+
+201
+00:15:30,550 --> 00:15:32,900
+I don't expect you to know javascript yet.
+
+202
+00:15:33,160 --> 00:15:35,260
+So let's save this.
+
+203
+00:15:35,800 --> 00:15:42,420
+And if we go back to our project this is our project.
+
+204
+00:15:42,430 --> 00:15:44,470
+We have a map.
+
+205
+00:15:44,570 --> 00:15:45,630
+OK.
+
+206
+00:15:45,790 --> 00:15:47,860
+So it's as simple as that.
+
+207
+00:15:47,980 --> 00:15:53,200
+If that was simple maybe that was really hard if you're just getting into this if you're if you're already
+
+208
+00:15:53,200 --> 00:15:59,230
+familiar with JavaScript and stuff and you've been watching like tutorials and this is probably brutal
+
+209
+00:15:59,230 --> 00:16:05,610
+for you to watch because it's very it's this at some point this is going to be very simple for you.
+
+210
+00:16:05,950 --> 00:16:07,260
+But yeah we have our map.
+
+211
+00:16:07,270 --> 00:16:09,460
+We have our form so good.
+
+212
+00:16:09,550 --> 00:16:12,760
+Now I think that we can get our footer in here.
+
+213
+00:16:12,760 --> 00:16:14,320
+That's the last thing on the page.
+
+214
+00:16:14,560 --> 00:16:16,240
+There's nothing not really anything to it.
+
+215
+00:16:16,240 --> 00:16:25,120
+So let's head back to index H Tim Al and under our section here let's put in our footer going to use
+
+216
+00:16:25,120 --> 00:16:26,500
+the footer tag.
+
+217
+00:16:26,500 --> 00:16:31,270
+And I'm also going to give it an idea of main dash footer.
+
+218
+00:16:31,360 --> 00:16:31,900
+All right.
+
+219
+00:16:31,900 --> 00:16:36,270
+And then in here we're just going to put a paragraph with a copy right.
+
+220
+00:16:36,370 --> 00:16:37,860
+So we'll say copyright.
+
+221
+00:16:37,900 --> 00:16:45,940
+We'll put our Ampersand copy semicolon remember that we'll say twenty not twenty ninety one be long
+
+222
+00:16:45,940 --> 00:16:58,510
+gone by then copyright twenty nineteen edge ledger and we'll say all rights reserved for our text and
+
+223
+00:16:58,510 --> 00:17:04,630
+then actually want to put that in a container so that it stays in the middle so we'll just move this
+
+224
+00:17:04,990 --> 00:17:10,560
+up into the container and then I want to add some extra classes to this footer.
+
+225
+00:17:11,380 --> 00:17:23,110
+So let's do b g dash dark and let's do text dash center and then P Y dash one to put the padding on
+
+226
+00:17:23,110 --> 00:17:31,940
+the top and the bottom and we'll save that and there we go that looks good so we're gonna go ahead and
+
+227
+00:17:31,940 --> 00:17:37,970
+stop here and in the next video we're gonna add our smooth scrolling which is also javascript.
+
+228
+00:17:37,970 --> 00:17:39,530
+I'll go over very briefly.
+
+229
+00:17:39,590 --> 00:17:43,970
+We'll be using something called J query which we'll talk about a little bit but right now I can hit
+
+230
+00:17:43,970 --> 00:17:51,920
+what brings us down to the what the WHO the menu does cover some of it because the menu is basically
+
+231
+00:17:51,920 --> 00:17:55,540
+fixed the rest of the site doesn't pay attention to this.
+
+232
+00:17:55,550 --> 00:18:03,530
+The spacing here so it does start like up here but we can actually kind of work that out with the with
+
+233
+00:18:03,530 --> 00:18:04,850
+the j query.
+
+234
+00:18:04,850 --> 00:18:05,120
+All right.
+
+235
+00:18:05,120 --> 00:18:06,470
+So I'll see you in the next video.
+

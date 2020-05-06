@@ -1,0 +1,360 @@
+﻿1
+00:00:00,210 --> 00:00:06,870
+All right so our project is is pretty much done for just regular screen sizes.
+
+2
+00:00:07,020 --> 00:00:11,890
+But in this video I want to tackle wide screens and just tablets.
+
+3
+00:00:11,910 --> 00:00:16,030
+And then in the next video we'll deal with smaller mobile devices.
+
+4
+00:00:16,110 --> 00:00:25,650
+So on wide screens and on tablets I want the the icon here to to basically align to the left.
+
+5
+00:00:25,650 --> 00:00:31,800
+So I want to turn each item into a flex container so that they go horizontal.
+
+6
+00:00:31,800 --> 00:00:37,670
+This div and this icon are horizontal even know these are flex items themselves.
+
+7
+00:00:37,670 --> 00:00:39,900
+They can also be flex containers.
+
+8
+00:00:39,900 --> 00:00:46,020
+So let's head over actually one thing I want to do before that and then we should have did this in the
+
+9
+00:00:46,020 --> 00:00:46,950
+beginning.
+
+10
+00:00:46,960 --> 00:00:51,170
+So we have this style CSM and below the mobile on the wide screen.
+
+11
+00:00:51,210 --> 00:00:52,070
+We don't want to do that.
+
+12
+00:00:52,070 --> 00:00:56,440
+We want the original style sheet above those two.
+
+13
+00:00:56,460 --> 00:01:03,980
+So I'm going to go ahead and just control C copy this and delete it and then move it above the wide
+
+14
+00:01:03,980 --> 00:01:06,980
+screen and the Mobile case.
+
+15
+00:01:07,050 --> 00:01:09,160
+We're going to do that and save.
+
+16
+00:01:09,510 --> 00:01:18,390
+Otherwise the the styles from style C CSX are gonna overwrite what we have in here unless we use important
+
+17
+00:01:18,390 --> 00:01:20,830
+tags which I don't want to put all over the place.
+
+18
+00:01:20,910 --> 00:01:21,930
+So let's do that.
+
+19
+00:01:21,960 --> 00:01:23,780
+Let's open up wide screen dots.
+
+20
+00:01:23,830 --> 00:01:31,110
+SS And like I said I want to turn each of these items into a flex container so that these are aligned
+
+21
+00:01:31,380 --> 00:01:32,360
+horizontally.
+
+22
+00:01:32,370 --> 00:01:45,680
+So to do that let's let's put a comment here we'll say a line icon to left so we'll take the what I
+
+23
+00:01:45,730 --> 00:01:50,720
+I.D. the items and then the item itself.
+
+24
+00:01:50,730 --> 00:01:51,160
+OK.
+
+25
+00:01:51,190 --> 00:01:54,320
+Because each of these have a class of item.
+
+26
+00:01:54,430 --> 00:01:56,180
+We're going to turn it into a flex block.
+
+27
+00:01:56,200 --> 00:01:59,650
+So display flex and save.
+
+28
+00:01:59,650 --> 00:02:00,270
+And notice that.
+
+29
+00:02:00,280 --> 00:02:04,850
+Now they align this way and don't worry about this we're going to fix that.
+
+30
+00:02:05,140 --> 00:02:11,710
+Now I want the text now to align to the left not the center.
+
+31
+00:02:11,710 --> 00:02:19,720
+So let's say text a line to the left and save that.
+
+32
+00:02:19,720 --> 00:02:20,890
+There we go.
+
+33
+00:02:20,890 --> 00:02:32,200
+Now for the icon we're gonna do some stuff with that so let's target the icon save position icon.
+
+34
+00:02:33,400 --> 00:02:37,390
+So we want the what I.D. then items.
+
+35
+00:02:37,660 --> 00:02:40,180
+Then item and then the eye.
+
+36
+00:02:40,240 --> 00:02:40,590
+OK.
+
+37
+00:02:40,600 --> 00:02:46,540
+Because that's that's where that the icon classes and first of all I'm going to add a margin to the
+
+38
+00:02:46,540 --> 00:02:50,320
+right of one point three REM.
+
+39
+00:02:50,410 --> 00:02:57,310
+Because as you can see there's no spacing right here so now we're taking this this icon and we're putting
+
+40
+00:02:57,310 --> 00:02:58,350
+some margin on the right.
+
+41
+00:02:58,350 --> 00:03:01,080
+So I save the seconds pushed over.
+
+42
+00:03:01,080 --> 00:03:01,240
+OK.
+
+43
+00:03:01,240 --> 00:03:03,940
+Another thing I want to do is fix this.
+
+44
+00:03:03,940 --> 00:03:06,310
+I want to align this in the middle.
+
+45
+00:03:06,310 --> 00:03:14,080
+So we're going to use the aligned dash self and we want to set that to center and save.
+
+46
+00:03:14,080 --> 00:03:16,270
+And now that puts that in the center.
+
+47
+00:03:16,270 --> 00:03:20,470
+And this by default has some margin bottom just from when we had it on the top.
+
+48
+00:03:20,470 --> 00:03:26,280
+So I'm going to clear that by just saying margin bottom and zero.
+
+49
+00:03:27,610 --> 00:03:28,000
+OK.
+
+50
+00:03:28,000 --> 00:03:30,760
+So I think that looks pretty good.
+
+51
+00:03:30,790 --> 00:03:37,480
+And another thing I want to do on wide screens is I don't want the map in the form to be even I want
+
+52
+00:03:37,480 --> 00:03:39,770
+the map to take up more space.
+
+53
+00:03:39,790 --> 00:03:46,160
+So if you remember we have flex one for both of these in fact I'll show you in style CSX.
+
+54
+00:03:46,330 --> 00:03:54,280
+If we go down here we have flex one for both the map and the contact form so on wide screens I'm going
+
+55
+00:03:54,280 --> 00:04:02,620
+to take the map and I'm going to add Flex 2 and save.
+
+56
+00:04:02,620 --> 00:04:05,410
+And now you can see that the map is wider.
+
+57
+00:04:05,410 --> 00:04:12,310
+And then when I get below eleven hundred it goes back to being even now on small screens and we get
+
+58
+00:04:12,310 --> 00:04:13,510
+to 768.
+
+59
+00:04:13,510 --> 00:04:20,740
+I also want I want these to stack on top of each other but I also want them to have the icon on the
+
+60
+00:04:20,770 --> 00:04:22,970
+left just like with wide screens.
+
+61
+00:04:23,050 --> 00:04:29,440
+So I'm actually going to copy these two styles here and put them into mobile dots.
+
+62
+00:04:29,460 --> 00:04:31,820
+SS OK.
+
+63
+00:04:31,840 --> 00:04:36,460
+Now if I save it it's going to look like that which doesn't look good because we need to stack these
+
+64
+00:04:36,460 --> 00:04:41,710
+on top of each other meaning we have to remove the flex so right up here.
+
+65
+00:04:41,710 --> 00:04:48,170
+Let's target what items.
+
+66
+00:04:48,700 --> 00:05:00,970
+And initially we had it set to flex but now we want to basically clear that flex and say display block
+
+67
+00:05:02,230 --> 00:05:03,610
+so we'll save that.
+
+68
+00:05:03,610 --> 00:05:09,930
+Let's add a little bit of a padding one room and there he goes.
+
+69
+00:05:09,930 --> 00:05:11,970
+Now they're stacked and that looks pretty good.
+
+70
+00:05:13,740 --> 00:05:14,940
+I mean you could keep it.
+
+71
+00:05:15,120 --> 00:05:21,150
+He could keep these in the middle like if we remove this and we save.
+
+72
+00:05:21,150 --> 00:05:27,050
+He could have that but I honestly think that this looks better now.
+
+73
+00:05:27,060 --> 00:05:33,360
+Every other style that we do in the mobile dot CSX I want to be four or five hundred pixels or less
+
+74
+00:05:33,390 --> 00:05:37,440
+because tablets tablets should look fine.
+
+75
+00:05:37,440 --> 00:05:45,210
+In fact if we go ahead and look at our mobile view here with our chrome tools iPhone obviously this
+
+76
+00:05:45,210 --> 00:05:45,930
+doesn't look good.
+
+77
+00:05:45,930 --> 00:05:50,400
+The menu doesn't this doesn't this doesn't.
+
+78
+00:05:50,410 --> 00:05:52,350
+We're gonna have to fix all this stuff.
+
+79
+00:05:52,350 --> 00:05:59,190
+But for the iPad I think things look pretty good.
+
+80
+00:05:59,190 --> 00:06:05,760
+It's big enough it's wide enough to keep this flex here and here the menu looks good.
+
+81
+00:06:05,760 --> 00:06:07,950
+We can even add more links.
+
+82
+00:06:07,950 --> 00:06:09,810
+And yeah I think that's fine.
+
+83
+00:06:09,810 --> 00:06:17,860
+So in the next video we're going to target you know iPhone apps iPhone X 6 7 8.
+
+84
+00:06:17,880 --> 00:06:22,920
+And if it does this with this this side here I'm not sure why that happens.
+
+85
+00:06:22,920 --> 00:06:26,720
+But notice if I just re save my file that goes away.
+
+86
+00:06:26,730 --> 00:06:29,440
+So I'm not sure what that is it's some kind of bug.
+
+87
+00:06:29,820 --> 00:06:32,290
+But yeah I'm gonna just clear this up.
+
+88
+00:06:33,000 --> 00:06:39,990
+And in the next video we're gonna start to work on basically you know smaller screens that are under
+
+89
+00:06:39,990 --> 00:06:40,760
+500.
+
+90
+00:06:40,770 --> 00:06:45,380
+So we're gonna add a media query here for that and we'll put our all of our styles in there.
+
