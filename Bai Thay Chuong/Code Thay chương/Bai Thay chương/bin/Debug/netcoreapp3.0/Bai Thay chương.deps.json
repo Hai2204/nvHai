@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Bai Thay chương/1.0.0": {
+        "runtime": {
+          "Bai Thay chương.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bai Thay chương/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
